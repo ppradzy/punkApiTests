@@ -1,4 +1,4 @@
-package RequestExecutor;
+package requestExecutor;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import constData.BrewdogData;

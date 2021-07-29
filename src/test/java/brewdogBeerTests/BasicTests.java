@@ -1,6 +1,6 @@
-package BrewdogBeerTests;
+package brewdogBeerTests;
 
-import RequestExecutor.RequestExecutor;
+import requestExecutor.RequestExecutor;
 import constData.BrewdogData;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -30,7 +30,6 @@ public class BasicTests {
             List<String> listOfAbvs = RequestExecutor.getResponseBodyFromRequest(pageNumber).findValuesAsText("abv");
             listOfAbvs.forEach(abvValue -> {
                 assertThat("ABV is not of a double type", AbvValueValidator.isDouble(abvValue), is(true));
-                assertThat("ABV has an empty value", abvValue.isEmpty(), is(false));
                 assertThat(String.format("ABV value is less than 4.0. Actual value: %s", abvValue), AbvValueValidator.hasValidValue(abvValue), is(true));
             });
             pageNumber++;
