@@ -1,0 +1,137 @@
+Request method:	GET
+:Request URI:	https://api.punkapi.com/v2/beers/0123456789
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+%Date: Thu, 29 Jul 2021 07:28:19 GMT
+/Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+ access-control-allow-origin: *
+7cache-control: public, max-age=14400, must-revalidate
+x-dns-prefetch-control: off
+*etag: W/"5f-I1AVtnvXGEYl7I1b6E4yTWGqQEM"
+x-download-options: noopen
+@strict-transport-security: max-age=15552000; includeSubDomains
+!x-xss-protection: 1; mode=block
+x-ratelimit-limit: 3600
+(access-control-allow-credentials: true
+x-ratelimit-remaining: 3335
+!x-content-type-options: nosniff
+x-ratelimit-reset: 1627412062
+x-frame-options: SAMEORIGIN
+raccess-control-expose-headers: x-ratelimit-limit,x-ratelimit-remaining,content-length,origin,content-type,accept
+x-vercel-cache: MISS
+age: 133354
+;x-vercel-id: lhr1::sfo1::tpclz-1627410345637-9dabdc8e78c9
+CF-Cache-Status: HIT
+dExpect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+„Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hyJwS%2Bfc1WAskPVfauY0ZNjM0pafuXl2TfjWtoOdHy3WNRzLwujRyJ68JrV7xomjAEdsRFV%2F9mPuDfyAc400pAgerpUsFwZ7Hq%2BpQcHpx3er6UBBZKdqakapL2kLet1%2F0S4%3D"}],"group":"cf-nel","max_age":604800}
+.NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6764a13bbc851fba-AMS
+Content-Encoding: gzip
+falt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+
+{
+    "statusCode": 404,
+    "error": "Not Found",
+>    "message": "No beer found that matches the ID 0123456789"
+}
+Request method:	GET
+XRequest URI:	https://api.punkapi.com/v2/beers/?brewed_after=12-2015&page=1&per_page=80
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+XRequest URI:	https://api.punkapi.com/v2/beers/?brewed_after=12-2015&page=2&per_page=80
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+Request method:	GET
+=Request URI:	https://api.punkapi.com/v2/beers/invalidBeerId
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+%Date: Thu, 29 Jul 2021 07:28:21 GMT
+/Content-Type: application/json; charset=utf-8
+Content-Length: 196
+Connection: keep-alive
+ access-control-allow-origin: *
+7cache-control: public, max-age=14400, must-revalidate
+x-dns-prefetch-control: off
+*etag: W/"c4-GEU9NY4dD2iDRl2D4Zg/lVrKjfw"
+x-download-options: noopen
+@strict-transport-security: max-age=15552000; includeSubDomains
+!x-xss-protection: 1; mode=block
+x-ratelimit-limit: 3600
+(access-control-allow-credentials: true
+!x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-ratelimit-remaining: 3435
+x-ratelimit-reset: 1627545493
+raccess-control-expose-headers: x-ratelimit-limit,x-ratelimit-remaining,content-length,origin,content-type,accept
+x-vercel-cache: MISS
+;x-vercel-id: lhr1::sfo1::pz9z4-1627543701161-fbf635e91046
+CF-Cache-Status: EXPIRED
+dExpect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+‚Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2BtQLceixUVmlSNt7ndMr8Qn7s0wdyPuoQBZDERqI0ULHrfbxSciMHKSs2ieS8v%2BD6xINiHLKf2RSX2W80%2BbME2Tr3vBhgWITt7oSQBR91H8Rvwa03nxGdTwY4eJCbZ3Oy6s%3D"}],"group":"cf-nel","max_age":604800}
+.NEL: {"report_to":"cf-nel","max_age":604800}
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 6764a1442887c795-AMS
+falt-svc: h3-27=":443"; ma=86400, h3-28=":443"; ma=86400, h3-29=":443"; ma=86400, h3=":443"; ma=86400
+
+{
+    "statusCode": 400,
+    "error": "Bad Request",
+'    "message": "Invalid query params",
+    "data": [
+
+        {
+"            "location": "params",
+            "param": "beerId",
+A            "msg": "beerId must be a number and greater than 0",
+%            "value": "invalidBeerId"
+
+        }
+    ]
+}
+Request method:	GET
+XRequest URI:	https://api.punkapi.com/v2/beers/?brewed_after=12-2015&page=1&per_page=80
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
